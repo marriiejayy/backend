@@ -3,7 +3,7 @@ import json
 
 data = [
     {
-        "name": "Sam Larry",
+        "name": "Adesina Mariam",
         "track": "AI Developer"
     }
 ]

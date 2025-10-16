@@ -3,7 +3,7 @@ import json
 
 data = [
     {
-        "name": "Sam Larry",
+        "name": "Adesina Mariam",
         "track": "AI Developer"
     }
 ]
@@ -27,7 +27,10 @@ class BasicAPI(BaseHTTPRequestHandler):
         data.clear()
         data.append(updated_data)
         
-        self.send_data({"message": "Data updated successfully"}, 200)
+        self.send_data({"name":  "Adesina Mariam",
+                        "track": "AI Developer",
+                        "state of origin": "Ogun state"     
+                        }, 200)
 
 def run():
     HTTPServer(('localhost', 8000), BasicAPI).serve_forever()
